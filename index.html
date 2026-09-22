@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy – WordCraft</title>
+  <meta name="description" content="Privacy Policy for the WordCraft word puzzle game. Learn how we handle your data." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg-deep: #0d0f1a;
+      --bg-card: rgba(255,255,255,0.05);
+      --border: rgba(255,255,255,0.10);
+      --accent: #7c6af7;
+      --accent2: #4fc3f7;
+      --text: #e8eaf6;
+      --muted: #8892b0;
+      --radius: 16px;
+    }
+    body {
+      font-family: 'Outfit', sans-serif;
+      background: var(--bg-deep);
+      color: var(--text);
+      min-height: 100vh;
+      line-height: 1.7;
+      background-image:
+        radial-gradient(ellipse 80% 50% at 20% -10%, rgba(124,106,247,0.18) 0%, transparent 60%),
+        radial-gradient(ellipse 60% 40% at 80% 110%, rgba(79,195,247,0.12) 0%, transparent 60%);
+    }
+    header {
+      text-align: center;
+      padding: 60px 24px 40px;
+      border-bottom: 1px solid var(--border);
+    }
+    .logo {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+    .logo-icon {
+      width: 52px; height: 52px;
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+      border-radius: 14px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 24px;
+      box-shadow: 0 8px 24px rgba(124,106,247,0.4);
+    }
+    .logo-text {
+      font-size: 28px;
+      font-weight: 700;
+      background: linear-gradient(135deg, #fff 30%, var(--accent2));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    header h1 { font-size: clamp(22px, 5vw, 36px); font-weight: 600; margin-bottom: 8px; }
+    header p { color: var(--muted); font-size: 14px; }
+    .container { max-width: 780px; margin: 0 auto; padding: 48px 24px 80px; }
+    .card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 32px;
+      margin-bottom: 24px;
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      transition: border-color 0.2s;
+    }
+    .card:hover { border-color: rgba(124,106,247,0.3); }
+    .card h2 {
+      font-size: 18px; font-weight: 600; color: #fff;
+      margin-bottom: 14px; display: flex; align-items: center; gap: 10px;
+    }
+    .card h2 .icon {
+      width: 32px; height: 32px;
+      background: linear-gradient(135deg, rgba(124,106,247,0.3), rgba(79,195,247,0.2));
+      border-radius: 8px; display: flex; align-items: center; justify-content: center;
+      font-size: 16px; flex-shrink: 0;
+    }
+    .card p { color: var(--muted); font-size: 15px; margin-bottom: 10px; }
+    .card p:last-child { margin-bottom: 0; }
+    .card ul { list-style: none; padding: 0; }
+    .card ul li {
+      color: var(--muted); font-size: 15px;
+      padding: 6px 0 6px 20px; position: relative;
+    }
+    .card ul li::before { content: '›'; position: absolute; left: 0; color: var(--accent); font-weight: 700; }
+    .highlight-box {
+      background: linear-gradient(135deg, rgba(124,106,247,0.12), rgba(79,195,247,0.08));
+      border: 1px solid rgba(124,106,247,0.25);
+      border-radius: 12px; padding: 20px; margin-top: 16px;
+    }
+    .highlight-box p { color: #c5cae9 !important; font-size: 14px !important; margin: 0 !important; }
+    .badge {
+      display: inline-block;
+      background: linear-gradient(135deg, rgba(124,106,247,0.25), rgba(79,195,247,0.15));
+      border: 1px solid rgba(124,106,247,0.3);
+      color: var(--accent2); font-size: 12px; font-weight: 600;
+      padding: 3px 10px; border-radius: 20px; margin-left: 8px;
+      vertical-align: middle; letter-spacing: 0.5px;
+    }
+    .contact-card {
+      background: linear-gradient(135deg, rgba(124,106,247,0.15), rgba(79,195,247,0.10));
+      border: 1px solid rgba(124,106,247,0.3);
+    }
+    .contact-card a { color: var(--accent2); text-decoration: none; font-weight: 500; }
+    .contact-card a:hover { text-decoration: underline; }
+    .effective-date {
+      text-align: center; color: var(--muted); font-size: 13px;
+      margin-top: 48px; padding-top: 24px; border-top: 1px solid var(--border);
+    }
+    footer { text-align: center; padding: 24px; color: var(--muted); font-size: 13px; border-top: 1px solid var(--border); }
+  </style>
+</head>
+<body>
+<header>
+  <div class="logo">
+    <div class="logo-icon">🔤</div>
+    <span class="logo-text">WordCraft</span>
+  </div>
+  <h1>Privacy Policy</h1>
+  <p>Last updated: September 23, 2025</p>
+</header>
+<div class="container">
+  <div class="card">
+    <h2><span class="icon">📋</span> Overview</h2>
+    <p>Welcome to <strong>WordCraft</strong>. We are committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard information when you play our game.</p>
+    <div class="highlight-box">
+      <p><strong>Short version:</strong> WordCraft is an offline-first word puzzle game. We do <strong>not</strong> collect personal information, sell your data, or track you across apps.</p>
+    </div>
+  </div>
+  <div class="card">
+    <h2><span class="icon">📦</span> Information We Collect <span class="badge">MINIMAL</span></h2>
+    <p>WordCraft stores the following data <strong>locally on your device only</strong>:</p>
+    <ul>
+      <li>Game progress (current level, completed levels)</li>
+      <li>In-game currency (coins) and purchased power-ups</li>
+      <li>Daily challenge completion status</li>
+      <li>App settings and preferences</li>
+    </ul>
+    <p style="margin-top:12px;">This data is stored in your device's local storage and is <strong>never transmitted to our servers</strong>.</p>
+  </div>
+  <div class="card">
+    <h2><span class="icon">🚫</span> What We Do NOT Collect</h2>
+    <ul>
+      <li>Your name, email address, or any personal identifiers</li>
+      <li>Location data or GPS information</li>
+      <li>Device contacts, camera, or microphone access</li>
+      <li>Browsing history or cross-app activity</li>
+      <li>Financial or payment information</li>
+      <li>Advertising IDs or tracking identifiers</li>
+    </ul>
+  </div>
+  <div class="card">
+    <h2><span class="icon">🔗</span> Third-Party Services</h2>
+    <p>WordCraft does not currently integrate with third-party analytics, advertising networks, or social platforms. No data is shared with any third party.</p>
+    <p>If we add third-party services in the future (e.g., crash reporting), this policy will be updated and users will be notified.</p>
+  </div>
+  <div class="card">
+    <h2><span class="icon">👶</span> Children's Privacy</h2>
+    <p>WordCraft does not knowingly collect any personal information from children under the age of 13. The game contains no chat features, social networking, or user-generated content.</p>
+    <p>Since all data is stored locally and no personal information is collected, the game is safe for all ages.</p>
+  </div>
+  <div class="card">
+    <h2><span class="icon">🔐</span> App Permissions</h2>
+    <p>WordCraft requests only the minimum permissions necessary to function:</p>
+    <ul>
+      <li><strong>Internet</strong> — Required for potential future online features and updates</li>
+      <li><strong>Storage</strong> — To save your game progress locally on your device</li>
+    </ul>
+    <p style="margin-top:12px;">No sensitive permissions (camera, microphone, location, contacts) are requested.</p>
+  </div>
+  <div class="card">
+    <h2><span class="icon">🛡️</span> Data Security</h2>
+    <p>Because all game data is stored locally on your device, you have full control over it. You can clear all game data at any time by clearing the app's storage in your device settings.</p>
+    <p>We use industry-standard security practices and do not maintain any servers that store personal user information.</p>
+  </div>
+  <div class="card">
+    <h2><span class="icon">🔄</span> Changes to This Policy</h2>
+    <p>We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated revision date. We encourage you to review this page periodically.</p>
+    <p>Continued use of the app after any changes constitutes your acceptance of the updated policy.</p>
+  </div>
+  <div class="card contact-card">
+    <h2><span class="icon">✉️</span> Contact Us</h2>
+    <p>If you have any questions about this Privacy Policy or our data practices, please contact us at:</p>
+    <p style="margin-top:12px;">📧 <a href="mailto:your-email@example.com">your-email@example.com</a></p>
+    <p style="color:#8892b0; font-size:13px; margin-top:8px;">Replace the email above with your actual contact address before publishing.</p>
+  </div>
+  <div class="effective-date">
+    This policy is effective as of <strong>September 23, 2025</strong> and applies to all versions of the WordCraft app.
+  </div>
+</div>
+<footer>© 2025 WordCraft. All rights reserved.</footer>
+</body>
+</html>
